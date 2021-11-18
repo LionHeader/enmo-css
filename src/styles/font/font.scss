@@ -1,0 +1,9 @@
+.font {
+  font-size: $font-size;
+}
+
+@each $size in (1, 2, 3) {
+  .font-#{$size} {
+    font-size: $font-size * $size;
+  }
+}

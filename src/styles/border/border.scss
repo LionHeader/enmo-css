@@ -1,0 +1,9 @@
+.border {
+  border: 1px solid #fff;
+}
+
+@each $var in ( left, right, top, bottom ) {
+  .border-#{$var} {
+    border: 1px solid #fff;
+  }
+}

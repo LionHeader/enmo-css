@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+}
+@each $var in (start, end, center) {
+  .flex-align-#{$var} {
+    @if $var == center {
+      align-items: $var;
+    } @else {
+      align-items: flex-#{$var};
+    }
+  }
+}
